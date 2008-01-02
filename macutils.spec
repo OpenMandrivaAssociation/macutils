@@ -13,6 +13,7 @@ Source0:	ftp://sunsite.unc.edu/pub/Linux/utils/compress/macutils.tar.bz2
 Patch0:		macutils-misc.patch
 Patch1:		macutils-2.0b3-gcc3.4-fix.patch
 Patch2:		macutils-2.0b3-gcc4.0-fixes.patch
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 The macutils package includes a set of utilities for manipulating
