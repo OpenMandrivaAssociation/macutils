@@ -1,6 +1,6 @@
 %define	name	macutils
 %define	version	2.0b3
-%define	release	%mkrel 20
+%define	release	%mkrel 21
 
 Summary:	Utilities for manipulating Macintosh file formats
 Name:		%{name}
