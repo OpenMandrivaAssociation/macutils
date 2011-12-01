@@ -35,21 +35,21 @@ perl -p -i -e "s/CF =/CF = $RPM_OPT_FLAGS/" makefile
 %make
 
 %install
-rm -rf $RPM_BUILD_ROOT
-mkdir -p $RPM_BUILD_ROOT%{_bindir}
-mkdir -p $RPM_BUILD_ROOT%{_mandir}/man1
+rm -rf %{buildroot}
+mkdir -p %{buildroot}%{_bindir}
+mkdir -p %{buildroot}%{_mandir}/man1
 
-install -m 755 binhex/binhex  $RPM_BUILD_ROOT%{_bindir}
-install -m 755 hexbin/hexbin $RPM_BUILD_ROOT%{_bindir}
-install -m 755 comm/frommac $RPM_BUILD_ROOT%{_bindir}
-install -m 755 mixed/macsave $RPM_BUILD_ROOT%{_bindir}
-install -m 755 mixed/macstream $RPM_BUILD_ROOT%{_bindir}
-install -m 755 macunpack/macunpack $RPM_BUILD_ROOT%{_bindir}
+install -m 755 binhex/binhex  %{buildroot}%{_bindir}
+install -m 755 hexbin/hexbin %{buildroot}%{_bindir}
+install -m 755 comm/frommac %{buildroot}%{_bindir}
+install -m 755 mixed/macsave %{buildroot}%{_bindir}
+install -m 755 mixed/macstream %{buildroot}%{_bindir}
+install -m 755 macunpack/macunpack %{buildroot}%{_bindir}
 
-install -m 644 man/* $RPM_BUILD_ROOT%{_mandir}/man1/
+install -m 644 man/* %{buildroot}%{_mandir}/man1/
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
