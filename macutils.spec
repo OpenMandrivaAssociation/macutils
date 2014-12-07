@@ -1,7 +1,7 @@
 Summary:	Utilities for manipulating Macintosh file formats
 Name:		macutils
 Version:	2.0b3
-Release:	29
+Release:	30
 License:	GPL-style
 Group:		Networking/Other
 Url:		ftp://sunsite.unc.edu/pub/Linux/utils/compress/
