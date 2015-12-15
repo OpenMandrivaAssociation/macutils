@@ -1,3 +1,5 @@
+%define _disable_lto 1
+
 Summary:	Utilities for manipulating Macintosh file formats
 Name:		macutils
 Version:	2.0b3
