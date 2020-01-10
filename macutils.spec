@@ -22,7 +22,7 @@ by Macintosh machines.
 
 %prep
 %setup -qn %{name}
-%apply_patches
+%autopatch -p1
 sed -i -e "s/CF =/CF = $RPM_OPT_FLAGS/" makefile
 
 %build
