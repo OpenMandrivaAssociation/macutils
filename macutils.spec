@@ -12,6 +12,7 @@ Patch0:		macutils-misc.patch
 Patch1:		macutils-2.0b3-gcc3.4-fix.patch
 Patch2:		macutils-2.0b3-gcc4.0-fixes.patch
 
+BuildRequires:	make
 %description
 The macutils package includes a set of utilities for manipulating
 files that are commonly used by Macintosh machines.  Macutils includes
